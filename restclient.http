@@ -1,0 +1,13 @@
+# nestjs gRPC Microservice 
+
+
+##############################
+# Register user
+POST http://localhost:3001/authentication/register
+Content-Type: application/json
+
+{
+  "email": "mo125@example.com",
+  "password": "123456",
+  "username": "mohamed"
+}
