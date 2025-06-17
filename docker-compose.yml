@@ -48,7 +48,7 @@ services:
       - DATABASE_PASSWORD=postgres
       - DATABASE_NAME=grpc_db
     ports:
-      - "3003:3003" 
+      - "3003:3003"
     networks:
       - backend
 
@@ -81,6 +81,15 @@ services:
       NEXT_PUBLIC_GATEWAY_API_URL: http://gateway:3001
     networks:
       - backend
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    ports:
+      - "8081:8080"
+    networks:
+      - backend
+    restart: always
 
 volumes:
   pgdata:

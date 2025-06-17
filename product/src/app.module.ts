@@ -10,7 +10,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     TypeOrmModule.forRoot({
             type: 'postgres',
             host: 'postgres',
-            port: parseInt(process.env.DATABASE_PORT || '5432', 10),
+            port: parseInt('5432', 10),
             username: 'postgres',
             password: 'postgres',
             database: 'grpc_db',

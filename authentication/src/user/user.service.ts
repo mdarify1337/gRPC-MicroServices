@@ -9,7 +9,7 @@ import { CreateUserDto } from './user.dto';
 export class UserService {
     constructor(
         @InjectRepository(User) 
-        private userRepo: Repository<User>) 
+        private readonly  userRepo: Repository<User>) 
     { }
 
     async createUser(dto: CreateUserDto): Promise<User> {

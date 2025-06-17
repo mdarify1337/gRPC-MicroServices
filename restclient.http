@@ -11,3 +11,15 @@ Content-Type: application/json
   "password": "123456",
   "username": "mohamed"
 }
+
+
+################ Create a product by user
+### Create Product
+POST http://localhost:3001/product/create
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "price": 99500,
+  "userId": "e0d4b0c7-9ddd-4a03-88c7-61e840f8409a"
+}
